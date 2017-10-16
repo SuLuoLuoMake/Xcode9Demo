@@ -16,6 +16,8 @@
 		5F29060F1F737BFC00EBE0A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F29060E1F737BFC00EBE0A1 /* main.m */; };
 		5F2906191F737BFD00EBE0A1 /* Xcode9DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2906181F737BFD00EBE0A1 /* Xcode9DemoTests.m */; };
 		5F2906241F737BFE00EBE0A1 /* Xcode9DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2906231F737BFE00EBE0A1 /* Xcode9DemoUITests.m */; };
+		F95A4C651F94ED7F00E8E40C /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F95A4C631F94ED7E00E8E40C /* UIView+AutoLayout.m */; };
+		F95A4C661F94ED7F00E8E40C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F95A4C641F94ED7F00E8E40C /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		5F29061F1F737BFD00EBE0A1 /* Xcode9DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xcode9DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2906231F737BFE00EBE0A1 /* Xcode9DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Xcode9DemoUITests.m; sourceTree = "<group>"; };
 		5F2906251F737BFF00EBE0A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95A4C611F94ED7E00E8E40C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		F95A4C621F94ED7E00E8E40C /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		F95A4C631F94ED7E00E8E40C /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		F95A4C641F94ED7F00E8E40C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		5F2905FB1F737BF400EBE0A1 /* Xcode9Demo */ = {
 			isa = PBXGroup;
 			children = (
+				F95A4C5F1F94ED3400E8E40C /* Main */,
 				5F2905FC1F737BF400EBE0A1 /* AppDelegate.h */,
 				5F2905FD1F737BF500EBE0A1 /* AppDelegate.m */,
 				5F2905FF1F737BF600EBE0A1 /* ViewController.h */,
@@ -133,6 +140,25 @@
 				5F2906251F737BFF00EBE0A1 /* Info.plist */,
 			);
 			path = Xcode9DemoUITests;
+			sourceTree = "<group>";
+		};
+		F95A4C5F1F94ED3400E8E40C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F95A4C601F94ED4200E8E40C /* Lib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F95A4C601F94ED4200E8E40C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F95A4C621F94ED7E00E8E40C /* UIView+AutoLayout.h */,
+				F95A4C631F94ED7E00E8E40C /* UIView+AutoLayout.m */,
+				F95A4C611F94ED7E00E8E40C /* UIView+Extension.h */,
+				F95A4C641F94ED7F00E8E40C /* UIView+Extension.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95A4C661F94ED7F00E8E40C /* UIView+Extension.m in Sources */,
+				F95A4C651F94ED7F00E8E40C /* UIView+AutoLayout.m in Sources */,
 				5F2906011F737BF700EBE0A1 /* ViewController.m in Sources */,
 				5F2905FE1F737BF500EBE0A1 /* AppDelegate.m in Sources */,
 				5F29060F1F737BFC00EBE0A1 /* main.m in Sources */,
@@ -435,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ADF76946XB;
+				DEVELOPMENT_TEAM = YPA8ZFWJMP;
 				INFOPLIST_FILE = Xcode9Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -450,7 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ADF76946XB;
+				DEVELOPMENT_TEAM = YPA8ZFWJMP;
 				INFOPLIST_FILE = Xcode9Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
